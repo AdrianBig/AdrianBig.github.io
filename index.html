@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e7a951e13e.js" crossorigin="anonymous"></script>
+    <!-- STYLING -->
+    <link rel="stylesheet" href="main.css">
+
+
+    <title>Studientransfer I - Geldautomat</title>
+</head>
+<body>
+    <div class="atm-box">
+        <div class="atm-content">
+            <div class="atm-header">
+                <h1>ATM</h1>
+            </div>
+            <div class="atm-body">
+                <div class="atm-grid">
+                    <div class="atm-balance">
+                        <div class="atm-balance-content">
+                            <p>Wilkommen,</p>
+                            <h3>Adrian Biglary</h3>
+                            <p>Kontostand</p>
+                            <h3 id="balance"></h3>
+                            <p>Bargeld:</p>
+                            <h3 id="cash"></h3>
+                        </div>
+                    </div>
+                    <div id="atm-buttons">
+                        <div class="atm-buttons-content">
+                        <div class="atm-buttons-row">
+                            <button id="showDepositMenu">Einzahlen</button>
+                            <button id="showWithdrawMenu">Abheben</button>
+                            <button id="kontoAuszug">Kontoauszug</button>
+                        </div>
+                        <div class="atm-buttons-row">
+                            <button id="changePin">Pin ändern</button>
+                            <button id="lockAccount">Konto Sperren</button>
+                            <button id="help">Hilfe</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="atm-deposit">
+                        <input type="text" name="Deposit Amount" id="depositAmount" placeholder="Hier eingeben">
+                        <input type="button" value="Einzahlen" id="depositButton">
+                    </div>
+                    <div id="atm-withdraw">
+                        <input type="text" name="Withdraw Amount" id="withdrawAmount"  placeholder="Hier eingeben">
+                        <input type="button" value="Auszahlen" id="withdrawButton">
+                    </div>
+                    <div class="back-to-menu-content">
+                        <button id="back-to-menu">Zurück</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kontoauszug-box">
+        <button id="closeStatement"><i class="fas fa-times"></i></button>
+        <div class="kontoauszug-content">
+            <h1>Kontoauszüge</h1>
+            <div id="kontoauszug-list">
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

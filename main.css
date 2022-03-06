@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    height:100%;
+    color:white;
+    background-color: rgb(25, 60, 145);
+}
+#atm-deposit {
+    display:none;
+}
+#atm-withdraw {
+    display:none;
+}
+.atm-box {
+    margin-top:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.atm-header {
+    text-align:left;
+    margin:auto;
+    margin-bottom:20px;
+    width:738px;
+    font-family: 'Bowlby One', cursive;
+}
+
+.atm-body {
+    width:100%;
+    display:flex;
+}
+#atm-deposit {
+    width:488px;
+    align-items: center;
+}
+#atm-withdraw {
+    width:488px;
+    align-items: center;
+}
+.atm-balance {
+    width:200px;
+}
+.atm-grid {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    margin:auto;
+    grid-gap: 50px;
+}
+#atm-buttons {
+    display: flex   ;
+    align-items: center;
+    justify-content: center;
+}
+#atm-buttons button {
+    margin:10px 5px;
+}
+.atm-content {
+    width:1000px;
+}
+.atm-balance p {
+    color:rgb(129, 198, 245);
+}
+.atm-balance-content h3 {
+    margin-bottom:20px;
+    font-family: 'Bowlby One', cursive;
+}
+
+button, input[type="button"] {
+    background:rgb(74, 164, 222);
+    color:white;
+    border:none;
+    height:60px;
+    width:150px;
+    font-weight:200;
+    outline:none;
+    cursor:pointer;
+    font-size:18px;
+    margin:0 10px;
+}
+input[type="text"] {
+    height:60px;
+    font-weight:200;
+    width:250px;
+    font-size:18px;
+    border:none;
+    outline:none;
+    padding:5px;
+}
+.back-to-menu-content {
+    width:100%;
+}
+#back-to-menu {
+    margin: 0;
+    display:none;
+}
+
+/* Kontoauszug */
+#kontoauszug-box {
+    display:none;
+    box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.075);
+    background-color: white;
+    color:#333;
+}
+.kontoauszug-column {
+    margin:0px 0;
+    margin-top:0;
+    background-color: white;
+    color:#333;
+}
+#closeStatement {
+    display:block;
+    margin:0;
+    width:20px;
+    height:20px;
+    font-size:10px;
+    background:white;
+    color:#fb4b4e;
+    float:right;
+    border-radius: 5px;
+}
+#kontoauszug-box {
+    width:700px;
+    margin:auto;
+    border-radius: 5px;
+    margin-bottom:100px;
+}
+.kontoauszug-content {
+    width:100%;
+    padding-left:10px;
+    padding-top:10px;
+}
+#kontoauszug-list {
+    max-height:500px;
+    overflow: scroll;
+}
+.kontoauszug-date {
+    margin-bottom:10px;
+}
+.kontoauszug-column h3 {
+    padding-top:10px;
+}
+.kontoauszug-hr {
+    box-shadow:none;
+    outline:none;
+    border:.5px solid rgba(85, 85, 85, 0.137);
+    width:90%;
+    margin:auto;
+    margin-top:10px;
+}
